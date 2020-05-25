@@ -1,0 +1,24 @@
+- type: entity
+  name: gas canister
+  id: GasCanister
+  description: A canister capable of holding pressurized gas
+  components:
+  - type: Sprite
+    sprite: Objects/Atmospherics/canister.rsi
+    state: grey
+  - type: Icon
+    sprite: Objects/Atmospherics/canister.rsi
+    state: grey
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Collidable
+    shapes:
+    - !type:PhysShapeAabb
+      bounds: "-0.47,-0.28,0.44,0.28"
+      mask: 30
+      layer: 31
+    IsScrapingFloor: true
+  - type: Physics
+    mass: 30
+    Anchored: false
+  
